@@ -1,0 +1,138 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg, #dfe1e1 0%, #ffffff 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
+}
+.head{
+  color: #4499c4;
+  background-color: #f7fffe;
+  padding: 0.5rem 2rem;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 50vw;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+form input {
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+form button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+form button {
+  color: #4499c4;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #4499c4;
+  color: white;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+  border-radius: 10px;
+}
+.todo {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  border-radius: 1.5rem;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.1);
+}
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex-grow: 1;
+  /* flex-shrink: 1; */
+  /* flex-basis: 0; */
+}
+
+.trash-btn,
+.complete-btn {
+  background: #05064b;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: #4499c4;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+select {
+
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+  border-radius: 10px;
+  color: #4499c4;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #4499c4;
+  cursor: pointer;
+  pointer-events: none;
+}
